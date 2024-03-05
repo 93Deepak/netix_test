@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command: waitress-serve --listen=0.0.0.0:8000 iot_project.wsgi:application
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
