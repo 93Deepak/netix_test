@@ -6,7 +6,8 @@ Techstack - Django, DRF, Docker
 2. cd <repo>
 3. docker-compose up --build
 
-   Now you can access Browsable APIs from browser run localhost:8000
+   Now you can access Browsable APIs from browser and also from postman
+   
 1. localhost:8000/api/sensor - CRUD operations for sensor
 2. localhost:8000/api/sensor-data - CRUD operations for sensor-data
 3. localhost:8000/api/token - Get access token for provided user credentials ( valid for 24 hours)
