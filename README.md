@@ -4,7 +4,14 @@ Techstack - Django, DRF, Docker
 #How to run
 1. git clone <repo>
 2. cd <repo>
-3. docker-compose up --build
+3. pip install -r requirements.txt
+4. python manage.py makemigrations
+5. python manage.py migrate
+6. python manage.py collectstatic
+7. python manage.py runserver
+   
+else if you want to run with docker then skip from 3 -7 and run below command
+9. docker-compose up --build
 
    Now you can access Browsable APIs from browser and also from postman
    
